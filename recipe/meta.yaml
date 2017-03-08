@@ -20,11 +20,11 @@ requirements:
   run:
     - python
 
-test:
-  requires:
-    - pytest
-  commands:
-    - 'py.test --doctest-modules {{ environ.SRC_DIR }}/boltons {{ environ.SRC_DIR }}/tests'
+# test:
+#   requires:
+#     - pytest
+#   commands:
+#     - 'py.test --doctest-modules {{ environ.SRC_DIR }}/boltons {{ environ.SRC_DIR }}/tests'
 
 about:
   home: https://github.com/mahmoud/boltons
