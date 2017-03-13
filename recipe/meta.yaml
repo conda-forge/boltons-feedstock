@@ -24,10 +24,13 @@ requirements:
     - python
 
 test:
+  source_files:
+    - boltons
+    - tests
   requires:
     - pytest
   commands:
-    - 'py.test --doctest-modules {{ environ.SRC_DIR }}/boltons {{ environ.SRC_DIR }}/tests'
+    - 'py.test --doctest-modules boltons tests'
 
 about:
   home: https://github.com/mahmoud/boltons
