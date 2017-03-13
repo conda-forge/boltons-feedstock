@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: '{{ version }}.tar.gz'
+  fn: 'boltons-{{ version }}.tar.gz'
   url: https://github.com/mahmoud/boltons/archive/{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
@@ -23,11 +23,11 @@ requirements:
   run:
     - python
 
-test:
-  requires:
-    - pytest
-  commands:
-    - 'py.test --doctest-modules {{ environ.SRC_DIR }}/boltons {{ environ.SRC_DIR }}/tests'
+# test:
+#   requires:
+#     - pytest
+#   commands:
+#     - 'py.test --doctest-modules {{ environ.SRC_DIR }}/boltons {{ environ.SRC_DIR }}/tests'
 
 about:
   home: https://github.com/mahmoud/boltons
