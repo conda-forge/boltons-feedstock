@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: '{{ version }}.tar.gz'
+  fn: 'boltons-{{ version }}.tar.gz'
   url: https://github.com/mahmoud/boltons/archive/{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
