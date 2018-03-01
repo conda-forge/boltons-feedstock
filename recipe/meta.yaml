@@ -27,6 +27,7 @@ test:
   source_files:
     - boltons
     - tests
+    - pytest.ini
   requires:
     - pytest
   commands:
