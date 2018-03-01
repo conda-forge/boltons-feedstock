@@ -15,9 +15,7 @@ Summary: boltons should be builtins. Boltons is a set of over 160 BSD-licensed, 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/boltons-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/boltons-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/boltons-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/boltons-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/boltons-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/boltons-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/boltons-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/boltons-feedstock)
 
 Current release info
 ====================
