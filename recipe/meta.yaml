@@ -1,7 +1,7 @@
 {% set name = "boltons" %}
-{% set version = "19.0.0" %}
+{% set version = "19.0.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "1f1f25eb9680889954f2a97cb5c2a389bc29b9573fcf524243416b58ed8390c5" %}
+{% set hash = "093cddf7410512ef2c3109fe7d94bff79b9e9570f881cd9d9ea6e92e681af51f" %}
 
 package:
   name: {{ name }}
