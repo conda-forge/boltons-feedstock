@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About boltons
 =============
 
@@ -19,8 +15,15 @@ Summary: boltons should be builtins. Boltons is a set of over 160 BSD-licensed, 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/boltons-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/boltons-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3742&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/boltons-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
