@@ -15,10 +15,11 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
+    - pip
     - python
     - setuptools
   run:
@@ -32,11 +33,12 @@ test:
   requires:
     - pytest
   commands:
-    - 'py.test --doctest-modules boltons tests'
+    - pytest --doctest-modules boltons tests
 
 about:
   home: https://github.com/mahmoud/boltons
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: >
     boltons should be builtins. Boltons is a set of over 160 BSD-licensed,
     pure-Python utilities in the same spirit as--and yet conspicuously
