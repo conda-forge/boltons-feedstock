@@ -1,21 +1,20 @@
 {% set name = "boltons" %}
-{% set version = "20.0.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "b63d07f93ddc9aa502404cba574e81995b8522de07a787e70519208344678c28" %}
+{% set version = "20.1.0" %}
+{% set hash = "81c77a095c652729676c549605d8b4c9949c87aebc729d84e7c7f5d56532f8e0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: 'boltons-{{ version }}.tar.gz'
+  fn: boltons-{{ version }}.tar.gz
   url: https://github.com/mahmoud/boltons/archive/{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -37,12 +36,11 @@ test:
 
 about:
   home: https://github.com/mahmoud/boltons
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: >
-    boltons should be builtins. Boltons is a set of over 160 BSD-licensed,
-    pure-Python utilities in the same spirit as--and yet conspicuously
-    missing from--the standard library.
+    boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard
+    library.
 
 extra:
   recipe-maintainers:
