@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/mahmoud/boltons
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: >
     boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard
