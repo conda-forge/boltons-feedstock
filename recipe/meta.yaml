@@ -1,6 +1,6 @@
 {% set name = "boltons" %}
-{% set version = "20.1.0" %}
-{% set hash = "81c77a095c652729676c549605d8b4c9949c87aebc729d84e7c7f5d56532f8e0" %}
+{% set version = "20.2.0" %}
+{% set hash = "30c6fb0a53f54ecfd9f986c6b27eaa1c50c6b7447ef1f4ad6e3900f82b9d792f" %}
 
 package:
   name: {{ name }}
@@ -39,8 +39,7 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: >
-    boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard
-    library.
+    boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
 
 extra:
   recipe-maintainers:
