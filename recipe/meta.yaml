@@ -1,6 +1,6 @@
 {% set name = "boltons" %}
-{% set version = "20.2.1" %}
-{% set hash = "f5b63fba62bed021c5086e43b4cfdaf6c8396a3ae1ccdcb549b4eb2f36f8a794" %}
+{% set version = "21.0.0" %}
+{% set hash = "9f29e135661071968b9cea1783dd5bd2403b2a141ccd5f5637692fc544bcc4db" %}
 
 package:
   name: {{ name }}
@@ -17,12 +17,12 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
-    - python
+    - python =2.7|>=3.4
     - setuptools
   run:
-    - python
+    - python =2.7|>=3.4
 
 test:
   source_files:
