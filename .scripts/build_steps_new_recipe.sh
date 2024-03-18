@@ -51,7 +51,6 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     # Drop into an interactive shell
     /bin/bash
 else
-    cat ${RECIPE_ROOT}
     rattler-build build --recipe recipe -m "${CI_SUPPORT}/${CONFIG}.yaml"
 fi
 
