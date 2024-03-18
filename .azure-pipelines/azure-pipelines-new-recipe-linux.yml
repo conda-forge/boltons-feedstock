@@ -35,7 +35,7 @@ jobs:
         else
           export IS_PR_BUILD="False"
         fi
-        .scripts/run_docker_build.sh
+        .scripts/run_docker_build_new_recipe.sh
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
