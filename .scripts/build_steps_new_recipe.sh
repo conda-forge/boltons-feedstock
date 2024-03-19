@@ -43,7 +43,7 @@ fi
 
 # rattler-build currently don't support conda debug, so I removed debug section
 
-rattler-build build --recipe recipe -m "${CI_SUPPORT}/${CONFIG}.yaml"
+rattler-build build --recipe "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml"
 
 ( startgroup "Final checks" ) 2> /dev/null
 

@@ -50,7 +50,7 @@ call :end_group
 
 :: Build the recipe
 echo Building recipe
-conda.exe run rattler-build build --recipe "recipe" -m .ci_support\%CONFIG%.yam
+conda.exe run rattler-build build --recipe "recipe" -m .ci_support\%CONFIG%.yaml
 
 
 if !errorlevel! neq 0 exit /b !errorlevel!
