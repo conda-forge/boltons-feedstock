@@ -68,6 +68,7 @@ fi
 rattler-build build --recipe ./recipe -m ./.ci_support/${CONFIG}.yaml
 ( startgroup "Validating outputs" ) 2> /dev/null
 
+validate_recipe_outputs "${FEEDSTOCK_NAME}"
 
 ( endgroup "Validating outputs" ) 2> /dev/null
 

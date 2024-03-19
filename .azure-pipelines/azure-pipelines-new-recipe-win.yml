@@ -36,7 +36,7 @@ jobs:
       displayName: Add conda to PATH
 
     - script: |
-        call ".scripts\run_win_build.bat"
+        call ".scripts\run_win_build_new_recipe.bat"
       displayName: Run Windows build
       env:
         PYTHONUNBUFFERED: 1
