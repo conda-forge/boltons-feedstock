@@ -43,8 +43,8 @@ fi
 
 # rattler-build currently don't support conda debug, so I removed debug section
 
-rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform linux
-rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform osx
+rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform linux-64
+rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform osx-64
 
 ( startgroup "Final checks" ) 2> /dev/null
 
