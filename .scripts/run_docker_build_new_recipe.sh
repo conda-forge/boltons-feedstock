@@ -21,6 +21,12 @@ if [ -z ${FEEDSTOCK_NAME} ]; then
     export FEEDSTOCK_NAME=$(basename ${FEEDSTOCK_ROOT})
 fi
 
+if [[ "${sha:-}" == "" ]]; then
+  pushd "${FEEDSTOCK_ROOT}"
+  sha=$(git rev-parse HEAD)
+  popd
+fi
+
 docker info
 
 # In order for the conda-build process in the container to write to the mounted
@@ -99,7 +105,7 @@ docker run ${DOCKER_RUN_ARGS} \
            -e STAGING_BINSTAR_TOKEN \
            "${DOCKER_IMAGE}" \
            bash \
-           "/home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh"
+           "/home/conda/feedstock_root/${PROVIDER_DIR}/build_steps_new_recipe.sh"
 
 # verify that the end of the script was reached
 test -f "$DONE_CANARY"
