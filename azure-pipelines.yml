@@ -4,5 +4,3 @@
 
 jobs:
   - template: ./.azure-pipelines/azure-pipelines-new-recipe-linux.yml
-  - template: ./.azure-pipelines/azure-pipelines-new-recipe-win.yml
-  - template: ./.azure-pipelines/azure-pipelines-new-recipe-osx.yml
