@@ -18,8 +18,10 @@ build:
 
 requirements:
   host:
+    - if: linux
+      then:
+        - python
     - pip
-    - python >=3.7
     - setuptools
   run:
     - python >=3.7
