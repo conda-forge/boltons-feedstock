@@ -43,8 +43,8 @@ fi
 
 # rattler-build currently don't support conda debug, so I removed debug section
 
-rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform linux-64 -m "${RECIPE_ROOT}/variants.yaml" > linux.json
-rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform osx-64 -m "${RECIPE_ROOT}/variants.yaml" > osx.json
+rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform linux-64 -m "${RECIPE_ROOT}/variants.yaml"
+rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform osx-64 -m "${RECIPE_ROOT}/variants.yaml"
 
 cat osx.json
 cat linux.json
