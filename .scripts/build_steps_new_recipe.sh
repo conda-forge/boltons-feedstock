@@ -46,6 +46,9 @@ fi
 rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform linux-64 -m "${RECIPE_ROOT}/variants.yaml" > linux.json
 rattler-build build --recipe "${RECIPE_ROOT}" --render-only --target-platform osx-64 -m "${RECIPE_ROOT}/variants.yaml" > osx.json
 
+cat osx.json
+cat linux.json
+
 ( startgroup "Final checks" ) 2> /dev/null
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"
