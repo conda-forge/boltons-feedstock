@@ -21,6 +21,7 @@ requirements:
     - pip
     - python =2.7|>=3.7
     - setuptools
+    - ruby
   run:
     - python =2.7|>=3.7
 
