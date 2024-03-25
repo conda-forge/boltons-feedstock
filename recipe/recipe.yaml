@@ -18,9 +18,7 @@ build:
 
 requirements:
   host:
-    - if: linux
-      then:
-        - python
+    - python
     - pip
     - setuptools
   run:
