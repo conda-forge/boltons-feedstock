@@ -67,7 +67,7 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
 else
 
     
-      rattler-build build --recipe "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml"
+      rattler-build build --recipe ./recipe -m ./.ci_support/${CONFIG}.yaml
 
       ls -al $CONDA_BLD_PATH
     ( startgroup "Validating outputs" ) 2> /dev/null
