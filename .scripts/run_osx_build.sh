@@ -66,9 +66,7 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
       echo "rattler-build don't support debug mode right now"
 else
 
-    CONDA_BLD_PATH=./build_artifacts
-
-    rattler-build build --recipe ./recipe -m ./.ci_support/${CONFIG}.yaml
+    rattler-build build --recipe ./recipe -m ./.ci_support/${CONFIG}.yaml --output-dir ${MINIFORGE_HOME}/conda-bld
 
     ls -al $CONDA_BLD_PATH
     ( startgroup "Validating outputs" ) 2> /dev/null
