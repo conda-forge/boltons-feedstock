@@ -63,8 +63,6 @@ else
       ls -al $CONDA_BLD_PATH
     ( startgroup "Validating outputs" ) 2> /dev/null
     
-    
-    
     validate_recipe_outputs "${FEEDSTOCK_NAME}"
 
     ( endgroup "Validating outputs" ) 2> /dev/null
