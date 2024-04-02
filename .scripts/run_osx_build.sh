@@ -66,7 +66,7 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
       echo "rattler-build don't support debug mode right now"
 else
 
-    CONDA_BLD_PATH = ${FEEDSTOCK_ROOT}/build_artifacts
+    CONDA_BLD_PATH=${FEEDSTOCK_ROOT}/build_artifacts
 
     rattler-build build --recipe ./recipe -m ./.ci_support/${CONFIG}.yaml
 
