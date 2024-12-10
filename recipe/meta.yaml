@@ -13,16 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python =2.7|>=3.7
+    - python {{ python_min }}
     - setuptools
   run:
-    - python =2.7|>=3.7
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -31,6 +31,7 @@ test:
     - pytest.ini
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - pytest --doctest-modules boltons tests
 
