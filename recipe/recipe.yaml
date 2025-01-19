@@ -1,15 +1,14 @@
 context:
   name: boltons
   version: 24.0.0
-  hash: f55bb241f15be5761803216ae7509e9270faf8e3e8687e744ab61a401ddd20ff
 
 package:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/mahmoud/boltons/archive/${{ version }}.tar.gz
-  sha256: ${{ hash }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7153feccaea1ff2e1472f68d4b57fadb796a2ee49d29f638f1c9cd8fb5ebd916
 
 build:
   number: 2
