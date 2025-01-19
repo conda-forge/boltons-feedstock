@@ -1,7 +1,7 @@
 About boltons-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/boltons-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmpesz62pq8-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mahmoud/boltons
 
@@ -9,15 +9,14 @@ Package license: BSD-3-Clause
 
 Summary: boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
 
-
 Current build status
 ====================
 
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3742&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/boltons-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tmpesz62pq8-feedstock?branchName=main">
       </a>
     </td>
   </tr>
