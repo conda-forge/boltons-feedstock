@@ -26,8 +26,8 @@ requirements:
 tests:
   - files:
       source:
-        - boltons
-        - tests
+        - boltons/
+        - tests/
         - pytest.ini
     requirements:
       run:
