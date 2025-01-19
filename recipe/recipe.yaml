@@ -10,7 +10,6 @@ package:
 source:
   url: https://github.com/mahmoud/boltons/archive/${{ version }}.tar.gz
   sha256: ${{ hash }}
-  file_name: boltons-${{ version }}.tar.gz
 
 build:
   number: 2
@@ -41,10 +40,8 @@ tests:
 about:
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: >
-    boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
-
-
+  summary: Boltons should be builtins. 
+  description: Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
   homepage: https://github.com/mahmoud/boltons
 
 extra:
