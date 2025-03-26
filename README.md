@@ -7,7 +7,13 @@ Home: https://github.com/mahmoud/boltons
 
 Package license: BSD-3-Clause
 
-Summary: boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
+Summary: When they're not builtins, they're boltons.
+
+Functionality that should be in the standard library. Like builtins, but Boltons.
+
+Otherwise known as, “everyone’s util.py,” but cleaned up and tested.
+
+Contains over 250 BSD-licensed utility types and functions that can be used as a package or independently. Extensively documented on Read the Docs.
 
 
 Current build status
