@@ -1,15 +1,13 @@
 {% set name = "boltons" %}
 {% set version = "24.1.0" %}
-{% set hash = "6e286ffb9de4e227deedf1513cd83cad4e2581f13a7fbb51609885e5c7f0f676" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: boltons-{{ version }}.tar.gz
-  url: https://github.com/mahmoud/boltons/archive/{{ version }}.tar.gz
-  sha256: {{ hash }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4a49b7d57ee055b83a458c8682a2a6f199d263a8aa517098bda9bab813554b87
 
 build:
   noarch: python
@@ -30,17 +28,25 @@ test:
     - tests
     - pytest.ini
   requires:
+    - pip
     - pytest
     - python {{ python_min }}
   commands:
+    - python -m pip check
+    - python -m pip show boltons
     - pytest --doctest-modules boltons tests
 
 about:
   home: https://github.com/mahmoud/boltons
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: >
-    boltons should be builtins. Boltons is a set of over 160 BSD-licensed, pure-Python utilities in the same spirit as--and yet conspicuously missing from--the standard library.
+  summary: When they're not builtins, they're boltons.
+  description: |
+    Functionality that should be in the standard library. Like builtins, but Boltons.
+
+    Otherwise known as, “everyone’s util.py,” but cleaned up and tested.
+
+    Contains over 250 BSD-licensed utility types and functions that can be used as a package or independently. Extensively documented on Read the Docs.
 
 extra:
   recipe-maintainers:
