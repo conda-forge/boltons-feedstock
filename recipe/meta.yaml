@@ -28,7 +28,7 @@ test:
   source_files:
     - boltons
     - tests
-    - pytest.ini
+    - pyproject.toml
   requires:
     - pytest
     - python {{ python_min }}
