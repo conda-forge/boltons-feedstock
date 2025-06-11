@@ -1,6 +1,6 @@
 {% set name = "boltons" %}
-{% set version = "24.0.0" %}
-{% set hash = "f55bb241f15be5761803216ae7509e9270faf8e3e8687e744ab61a401ddd20ff" %}
+{% set version = "25.0.0" %}
+{% set hash = "7c9e47f2ca1c1f704950e913bf518c6c599dc4a01bc5feffffce2c3bf3c878ee" %}
 
 package:
   name: {{ name }}
@@ -13,14 +13,14 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - flit-core >=3.2,<4
   run:
     - python >={{ python_min }}
 
@@ -28,7 +28,7 @@ test:
   source_files:
     - boltons
     - tests
-    - pytest.ini
+    - pyproject.toml
   requires:
     - pytest
     - python {{ python_min }}
